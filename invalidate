@@ -39,8 +39,10 @@ echo "$TODO_FILE"
 sed -i.bak -e '/./!d' "$TODO_FILE"
 
 [ $TODOTXT_VERBOSE -gt 0 ] && grep "^~ " "$TODO_FILE"
+
 grep "^~ " "$TODO_FILE" >> "$INVALID_FILE"
 sed -i.bak '/^~ /d' "$TODO_FILE"
 
 if [ $TODOTXT_VERBOSE -gt 0 ]; then
 echo "TODO: $TODO_FILE invalid items archived."
+fi
