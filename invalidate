@@ -23,6 +23,8 @@
 
 ACTION=$1
 
+echo "invalid addon"
+
 if [[ $ACTION == "usage" ]]; then
     echo "    invalidate"
     echo "      move invalid todo items (i.e todo items marked with tilde ~ sign) to invalid.txt"    
@@ -38,4 +40,3 @@ sed -i.bak '/^~ /d' "$TODO_FILE"
 
 if [ $TODOTXT_VERBOSE -gt 0 ]; then
 echo "TODO: $TODO_FILE invalid items archived."
-
