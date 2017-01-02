@@ -24,3 +24,4 @@ Tasks that are marked with ~ (tilde sign) can be to invalid.txt file using this 
 		invalid.txt	
 		~ 2015-11-16 dream about world
 		~ 2015-11-16 2015-11-15 exercise
+invalidate run.bat 
